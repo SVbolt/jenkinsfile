@@ -16,5 +16,10 @@ pipeline {
 				sh 'ping https://mtkp.bmstu.ru/'
 				}
 			}
+		stage("Second step") {
+			steps {
+				sh 'ping https://mtkp.bmstu.ru/'
 		}
-	} 
+	}
+	}
+}
